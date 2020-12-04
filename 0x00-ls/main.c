@@ -16,7 +16,7 @@ int main(void)
 
 	while ((read = readdir(dir)) != NULL)
 	{
-		if (read->d_type != DT_UNKNOWN)
+		if (read->d_type != DT_UNKNOWN && *read->d_name != *".")
 			printf("%s ", read->d_name);
 	}
 	closedir(dir);
