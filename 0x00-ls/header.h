@@ -9,10 +9,9 @@
 #include <unistd.h>
 
 /*ls*/
-int hls(char *arguments, char *files);
+int hls(void);
 
 /*string tools*/
-
 int _strcmp(char *s1, char *s2);
 char *_strcat(char *dest, char *src);
 int _strlen(char *s);
